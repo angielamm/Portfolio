@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angie Lam's Portfolio</title>
+    <link rel="icon" type="image/png" href="emoji2.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-name">Angie Lam-Otero</div>
+        <div class="nav-links">
+            <a href="#hero">Home</a>
+            <a href="#timeline">Journey</a>
+            <a href="#projects">Work</a>
+            <a href="#hobbies">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <section id="hero" class="section">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Hey there!</h1>
+                <p>Welcome to my portfolio – a collection of work that reflects my journey as a frontend developer and entrepreneur. I've included projects across different areas, from creative design to hands-on development and business ventures. Feel free to explore, and if something catches your eye, there's a contact button so we can connect!</p>
+            </div>
+            <div class="hero-image">
+                <div class="flip-container" onclick="flipCard()">
+                    <div class="flipper">
+                        <div class="front">
+                            <img src="Professional Profile Picture Crop.jpeg" alt="Angie Profile Picture">
+                        </div>
+                        <div class="back">
+                            <img src="emoji.png" alt="Angie's Emoji" class="emoji-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="timeline" class="section">
+        <h2>My Journey</h2>
+        <div class="timeline">
+            <div class="timeline-item left">
+                <div class="timeline-logo">
+                    <img src="logos/telasviajeras.png" alt="Telas Viajeras Logo">
+                </div>
+                <div class="content">
+                    <h3>2020 – Started My First Business</h3>
+                    <p>Launched Telas Viajeras HN, my first e-commerce brand built with zero budget, big ideas, and tons of learning.</p>
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="timeline-logo">
+                    <img src="logos/connectorlando.jpeg" alt="Connect Orlando Logo">
+                </div>
+                <div class="content">
+                    <h3>2022 – Frontend Passion Sparks</h3>
+                    <p>Started building Connect Orlando. Dove deeper into coding and fell in love with building beautiful, functional websites from scratch.</p>
+                </div>
+            </div>
+            <div class="timeline-item left">
+                <div class="timeline-logo">
+                    <img src="logos/delvify.png" alt="Delvify Logo">
+                </div>
+                <div class="content">
+                    <h3>2024 – Internship in Singapore</h3>
+                    <p>Interned as a frontend developer at Delvify, a tech company helping the textile industry. While also exploring Southeast Asia and its cultures.</p>
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="timeline-logo">
+                    <img src="logos/rollinscollege.png" alt="Rollins College Logo">
+                </div>
+                <div class="content">
+                    <h3>2025 – Graduated 🎓</h3>
+                    <p>Earned my B.A. in Computer Science with a minor in Communication Studies — proud and ready for what's next!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>See previews of my work:</h2>
+        <p>This section highlights some of my design-focused projects. These are static previews. I haven't launched full live versions or purchased a custom domain yet, but each project gives a clear look at my visual direction and creative process.</p>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3><a href="https://angielamm.github.io/URL_SHORTENER/" target="_blank">URL Shortener</a></h3>
+            </div>
+            <div class="project-card">
+                <h3><a href="https://mracs.dev/freshwater-atlas/" target="_blank">The Freshwater Atlas</a></h3>
+            </div>
+            <div class="project-card">
+                <h3><a href="https://drive.google.com/file/d/1-OYm7kJPLlig0Rmm4Pq6HcPzn-8EVn64/view?usp=sharing" target="_blank">* Furrever Homes (Video Walkthrough) *</a></h3>
+            </div>
+            <div class="project-card">
+                <h3><a href="https://telasviajerashn.company.site/" target="_blank">Telas Viajeras E-Commerce (Spanish)</a></h3>
+            </div>
+            <div class="project-card">
+                <h3><a href="" target="_blank">My Portfolio</a></h3>
+            </div>
+            <div class="project-card">
+                <h3><a href="https://drive.google.com/drive/folders/1PvEPzrkf-kmi2peaH5RaXIQgigZcU8eF?usp=sharing" target="_blank">Connect Orlando (Components)</a></h3>
+            </div>
+        </div>
+        <p class="project-note">* Projects marked with an asterisk were created in collaborative settings where I contributed significantly but didn't have full creative control.</p>
+    </section>
+
+    <section id="hobbies" class="section">
+        <h2>What I Love Outside of Work</h2>
+        <p>What helps me stay creative, grounded, and motivated in everything I do:</p>
+        <div class="hobbies-layout">
+            <div class="hobbies-text">
+                <details>
+                    <summary>🌍 Exploring new places</summary>
+                    <div class="hobby-content">
+                        <p>I'm super curious about the world — whether it's visiting a new country or just checking out a new spot in town. I love learning about different cultures, trying new food, and getting a feel for local music and traditions. Every place teaches me something new and helps me see things from a different perspective.</p>
+                    </div>
+                </details>
+                <details>
+                    <summary>📚 Reading thrillers</summary>
+                    <div class="hobby-content">
+                        <p>Thrillers are my current obsession. I usually read slowly… until the hook gets me — then I fly through the rest of the book in one sitting. I love a good twist that keeps me guessing.</p>
+                    </div>
+                </details>
+                <details>
+                    <summary>🏋️‍♀️ Weight Lifting</summary>
+                    <div class="hobby-content">
+                        <p>The gym is my happy place. Weightlifting is my favorite part of the day — it's where I recharge, challenge myself, and see results from my own effort. It keeps me focused, energized, and honestly, it's the best kind of therapy.</p>
+                    </div>
+                </details>
+                <details>
+                    <summary>💬 Hanging out with friends & family</summary>
+                    <div class="hobby-content">
+                        <p>Nothing beats quality time with the people I love. Hanging out with friends and family keeps me grounded and full of joy — it's the most important part of life for me.</p>
+                    </div>
+                </details>
+                <details>
+                    <summary>🎤🎧🎵📺🎬</summary>
+                    <div class="hobby-content">
+                        <p>I'm always listening to music, watching something new, or singing around the house (yes, the shower concerts are real). I've been singing since I was little — from theater and choir to solo performances — and it's still one of my favorite outlets.
+                        <br><br>
+                        As for movies and shows, I watch whatever my friends recommend on <a href="https://boxd.it/1xRY5" target="_blank">Letterboxd</a>. I just finished Season 2 of <em>Severance</em> (obsessed), and <em>How I Met Your Mother</em> has officially become my comfort show.</p>
+                    </div>
+                </details>
+            </div>
+            <div class="hobbies-gallery">
+                <img src="friends.jpg" alt="Friends" class="gallery-img">
+                <img src="reading.jpg" alt="Reading" class="gallery-img">
+                <img src="travel2.jpg" alt="Exploring Europe" class="gallery-img wide">
+                <img src="travel.jpg" alt="Exploring Asia" class="gallery-img">
+                <img src="art.jpg" alt="Digital Art" class="gallery-img">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Let's talk!</h2>
+        <p>Want to connect? Whether it's about a project, an idea, or just to say hi, I'd love to chat. Click the button to book a time that works best for you!</p>
+        <a href="https://calendly.com/angielamm13/new-meeting" target="_blank" class="contact-btn">Contact Me</a>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html> 
