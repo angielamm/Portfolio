@@ -571,7 +571,7 @@ details[open] .hobby-image {
         display: none;
     }
 
-    /* Optional: Add a mobile-friendly message */
+    /* Show mobile message */
     #timeline-mobile-message {
         display: block;
         text-align: center;
@@ -789,4 +789,23 @@ details[open] .hobby-image {
 
 .timeline-item.right .timeline-logo {
     left: -30px;
+}
+
+/* Hide mobile message by default (desktop) */
+#timeline-mobile-message {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    /* Hide timeline on mobile */
+    #timeline {
+        display: none;
+    }
+
+    /* Show mobile message */
+    #timeline-mobile-message {
+        display: block;
+        text-align: center;
+        padding: 2rem 1rem;
+    }
 } 
