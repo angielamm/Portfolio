@@ -9,7 +9,7 @@
 body {
     font-family: 'Libre Baskerville', serif;
     line-height: 1.6;
-    background-color: #e8e8e8;
+    background-color: #f5f5f5;
 }
 
 nav {
@@ -44,6 +44,29 @@ nav {
 
 .nav-links a:hover {
     color: #ffffff;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    transition: opacity 0.3s ease;
+}
+
+.social-links a:hover {
+    opacity: 0.8;
+}
+
+.linkedin-icon {
+    width: 24px;
+    height: 24px;
+    filter: invert(1);
 }
 
 .section {
@@ -370,12 +393,10 @@ details[open] .hobby-image {
         font-size: 1.2rem;
     }
 
-    /* Hide regular nav links */
     .nav-links {
         display: none;
     }
 
-    /* Hamburger menu button */
     .menu-toggle {
         display: block;
         cursor: pointer;
@@ -391,12 +412,11 @@ details[open] .hobby-image {
         transition: all 0.3s ease;
     }
 
-    /* Mobile menu */
     .nav-links.active {
         display: flex;
         flex-direction: column;
         position: fixed;
-        top: 60px;  /* Height of nav bar */
+        top: 60px;
         left: 0;
         right: 0;
         background-color: #1a1a1a;
@@ -576,6 +596,23 @@ details[open] .hobby-image {
         display: block;
         text-align: center;
         padding: 2rem 1rem;
+    }
+
+    .social-links {
+        position: fixed;
+        bottom: 1rem;
+        right: 1rem;
+        margin: 0;
+        z-index: 1001;
+    }
+
+    .linkedin-icon {
+        width: 32px;
+        height: 32px;
+        background: #1a1a1a;
+        padding: 6px;
+        border-radius: 50%;
+        filter: invert(1);
     }
 }
 
