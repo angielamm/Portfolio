@@ -363,26 +363,52 @@ details[open] .hobby-image {
 
 @media (max-width: 768px) {
     nav {
-        padding: 1rem 1.5rem;
-        background-color: rgba(26, 26, 26, 0.95);
+        padding: 1rem;
     }
-    
+
     .nav-name {
         font-size: 1.2rem;
-        font-weight: 700;
     }
-    
+
+    /* Hide regular nav links */
     .nav-links {
-        display: flex;
-        gap: 1rem;
+        display: none;
     }
-    
-    .nav-links a {
-        margin-left: 0;
-        font-size: 0.9rem;
+
+    /* Hamburger menu button */
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        padding: 0.5rem;
+    }
+
+    .menu-toggle span {
+        display: block;
+        width: 25px;
+        height: 2px;
+        background-color: #fff;
+        margin: 5px 0;
+        transition: all 0.3s ease;
+    }
+
+    /* Mobile menu */
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 60px;  /* Height of nav bar */
+        left: 0;
+        right: 0;
+        background-color: #1a1a1a;
+        padding: 1rem;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .nav-links.active a {
         padding: 0.5rem 0;
     }
-    
+
     .section {
         padding: 5rem 1.5rem 3rem;
     }
@@ -479,25 +505,77 @@ details[open] .hobby-image {
     }
 
     .timeline::after {
-        left: 8px;
+        display: none;  /* Remove vertical line */
     }
 
     .timeline-item {
         width: 100%;
-        left: 0 !important;
-        padding-left: 2.5rem;
+        margin-bottom: 2rem;
+        padding: 0 1rem;
+        position: relative;
     }
 
-    .timeline-item.right .content::before,
-    .timeline-item.left .content::before {
-        left: 1rem;
-        right: auto;
-        border-color: transparent white transparent transparent;
+    .timeline-item.left,
+    .timeline-item.right {
+        left: 0;
     }
 
-    .project-note {
-        margin-top: 1.5rem;
-        font-size: 0.85rem;
+    /* Logo styling */
+    .timeline-logo {
+        width: 45px;
+        height: 45px;
+        position: static;
+        margin: 0 auto 1rem;
+        transform: none;
+        background: white;
+        border-radius: 50%;
+        display: block;
+    }
+
+    /* Content box styling */
+    .timeline-item .content {
+        background: #ff7f50;  /* Default background */
+        border-radius: 15px;
+        padding: 1rem;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 300px;
+    }
+
+    .timeline-item .content h3 {
+        font-size: 1rem;
+        color: white;
+        margin: 0;
+        line-height: 1.4;
+    }
+
+    /* Different colors for each item */
+    .timeline-item:nth-child(1) .content { background: #ff7f50; }  /* Coral */
+    .timeline-item:nth-child(2) .content { background: #ffd700; }  /* Yellow */
+    .timeline-item:nth-child(3) .content { background: #ff6b6b; }  /* Red */
+    .timeline-item:nth-child(4) .content { background: #4facfe; }  /* Blue */
+
+    /* Hide description */
+    .timeline-item .content p {
+        display: none;
+    }
+
+    /* Remove all previous decorative elements */
+    .timeline-item.left .content::before,
+    .timeline-item.right .content::before {
+        display: none;
+    }
+
+    /* Hide the entire timeline section on mobile */
+    #timeline {
+        display: none;
+    }
+
+    /* Optional: Add a mobile-friendly message */
+    #timeline-mobile-message {
+        display: block;
+        text-align: center;
+        padding: 2rem 1rem;
     }
 }
 

@@ -10,6 +10,11 @@
 <body>
     <nav>
         <div class="nav-name">Angie Lam-Otero</div>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <div class="nav-links">
             <a href="#hero">Home</a>
             <a href="#timeline">Journey</a>
@@ -44,11 +49,13 @@
         <h2>My Journey</h2>
         <div class="timeline">
             <div class="timeline-item left">
-                <div class="timeline-logo">
-                    <img src="logos/telasviajeras.png" alt="Telas Viajeras Logo">
+                <div class="timeline-header">
+                    <div class="timeline-logo">
+                        <img src="logos/telasviajeras.png" alt="Telas Viajeras Logo">
+                    </div>
+                    <h3>2020 – Started My First Business</h3>
                 </div>
                 <div class="content">
-                    <h3>2020 – Started My First Business</h3>
                     <p>Launched Telas Viajeras HN, my first e-commerce brand built with zero budget, big ideas, and tons of learning.</p>
                 </div>
             </div>
@@ -80,6 +87,12 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <!-- Optional: Mobile message -->
+    <section id="timeline-mobile-message" class="section">
+        <h2>My Journey</h2>
+        <p>Please view on desktop for the full journey timeline.</p>
     </section>
 
     <section id="projects" class="section">
